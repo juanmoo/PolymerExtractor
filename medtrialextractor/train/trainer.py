@@ -114,6 +114,8 @@ class IETrainer(Trainer):
             num_training_steps=num_training_steps
         )
 
+        print('-' * 100)
+
         return optimizer, scheduler
 
     def evaluate(self, eval_dataset: Optional[Dataset] = None) -> Dict:
