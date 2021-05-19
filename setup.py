@@ -14,23 +14,20 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='medtrialextractor',
-    author="Jiang Guo, Santiago Ibanez, Hanyu Gao",
-    author_email="jiang_guo@csail.mit.edu",
+    author="Jiang Guo, Santiago Ibanez, Juan Ortiz",
     description='Chemical Reaction Extraction from Literature',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='Pre-trainin://github.com/jiangfeng1124/ChemRxnExtractor',
     version=__version__,
     license='MIT',
     packages=find_packages(),
-    python_requires='>=3.6',
+    python_requires='>=3.8.8',
     install_requires=[
         'numpy==1.20.2',
         'seqeval==1.2.2',
         'torch==1.8.1',
         'tqdm==4.60.0',
-        'transformers==3.0.2',
-        'ya.dotdict',
+        'transformers==4.6.0',
         'beautifulsoup4',
         'spacy',
         'pandas'
